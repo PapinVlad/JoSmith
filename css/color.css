@@ -1,0 +1,86 @@
+body { color: rgba(17,32,77,0.7); background-color: #fcfcfd; }
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #11204d; }
+a { color: #11204d; }
+a:hover { color: #6138bd; }
+/*----------------------------------------*/
+/*----- Backgrounds -----*/
+/*----------------------------------------*/
+.bg-trans { background-color: transparent !important; }
+.bg-white { background-color: #fff !important; }
+.bg-grey { background-color: #f7f8fa !important; }
+.bg-dark-grey { background-color: #e8e4f4 !important; }
+.bg-blue { background-color: #6138bd !important; }
+.bg-light-blue { background-color: #f7f8fa !important; }
+.bg-dark-blue { background-color: #3e3c56 !important; }
+.bg-red { background-color: #ff4646 !important; }
+.bg-orange { background-color: #ff9b0b !important; }
+.bg-gold { background-color: #cfad70 !important; }
+.bg-green { background-color: #98c513 !important; }
+.bg-dark { background-color: #11204d !important; }
+/*----------------------------------------*/
+/*----- Overlays -----*/
+/*----------------------------------------*/
+.dtr-overlay { background-color: rgba(0, 0, 0, .8); }
+/*----------------------------------------*/
+/*----- Text -----*/
+/*----------------------------------------*/
+/*== dark ==*/
+.color-dark { color: #11204d; }
+/*== white ==*/
+.color-white, .color-white h1, .color-white h2, .color-white h3, .color-white h4, .color-white h5, .color-white h6, .color-white a { color: #fff !important; }
+/*== white muted ==*/
+.color-white-muted, .color-white-muted h1, .color-white-muted h2, .color-white-muted h3, .color-white-muted h4, .color-white-muted h5, .color-white-muted h6, .color-white-muted a { color: rgba(255,255,255,.8) !important; }
+/*== grey ==*/
+.color-grey { color: rgba(17,32,77,0.35); }
+.color-grey-muted { color: #f8f8f8; }
+/*== blue ==*/
+.color-blue { color: #6138bd; }
+/*== red ==*/
+.color-red { color: #ff4646; }
+.color-red-muted { color: #ffecec; }
+/*== orange ==*/
+.color-orange { color: #ff9b0b; }
+/*== gold ==*/
+.color-gold { color: #cfad70; }
+/*== green ==*/
+.color-green { color: #98c513; }
+/*===== border =====*/
+.border-white { border-color: #fff !important; }
+.border-grey { border-color: rgba(17,32,77,0.15) !important; }
+.border-blue { border-color: #6138bd !important; }
+.border-dark { border-color: #3e3c56 !important; }
+.border-red { border-color: #ff4646 !important; }
+.border-green { border-color: #98c513 !important; }
+.border-gold { border-color: #cfad70 !important; }
+/*----- Buttons -----*/
+/*----------------------------------------*/
+.dtr-btn, input[type="submit"] { background-color: #3e3c56; border-color: #3e3c56; color: #fff; }
+.dtr-btn-flat { background-color: transparent; border-color: #3e3c56; color: #3e3c56; }
+.dtr-btn i { color: inherit !important; }
+/*-- white --*/
+.btn-white { background-color: #fff; border-color: rgba(17,32,77,0.20); color: #11204d; }
+.btn-flat-white { border-color: #fff; color: #fff; }
+.btn-flat-white:hover { background-color: #fff; color: #3e3c56; }
+/*-- grey --*/
+.btn-grey { background-color: #e5e5e5; border-color: #e5e5e5; color: #3e3c56; }
+.btn-flat-grey { border-color: #e5e5e5; color: #e5e5e5; }
+.btn-flat-grey:hover { background-color: #e5e5e5; color: #3e3c56; }
+/*-- blue --*/
+.btn-blue { background-color: #6138bd; border-color: #6138bd; color: #fff; }
+.btn-flat-blue { border-color: #6138bd; color: #6138bd; }
+.btn-flat-blue:hover { background-color: #6138bd; color: #fff; }
+/*-- red --*/
+.btn-red { background-color: #ff4646; border-color: #ff4646; color: #fff; }
+.btn-flat-red { border-color: #ff4646; color: #ff4646; }
+.btn-flat-red:hover { background-color: #ff4646; color: #fff; }
+/*-- gold --*/
+.btn-gold { background-color: #cfad70; border-color: #cfad70; color: #fff; }
+.btn-flat-gold { border-color: #cfad70; color: #cfad70; }
+.btn-flat-gold:hover { background-color: #cfad70; color: #fff; }
+/*-- green --*/
+.btn-green { background-color: #98c513; border-color: #98c513; color: #fff; }
+.btn-flat-green { border-color: #98c513; color: #98c513; }
+.btn-flat-green:hover { background-color: #98c513; color: #fff; }
+/*===== button hovers =====*/
+.dtr-btn:hover, .dtr-btn-flat:hover, #submit:hover, input[type="submit"]:hover { background-color: #11204d; border-color: #11204d; color: #fff; }
+/*----------------------------------------*/
