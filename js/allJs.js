@@ -1,8 +1,9 @@
  const elements = document.querySelectorAll('b');
 
  
- 
+ //
  //The function of the appearance and disappearance of a word
+ //
 setInterval(() => {
     elements.forEach((element) => {
         if (element.classList.contains('is-visible')) {
@@ -16,7 +17,11 @@ setInterval(() => {
     });
 }, 5000);
 
-//slider 
+
+//
+//slider
+//
+//
 const slider = document.querySelector(".slides");
 let isDown = false;
 let startX;
@@ -43,7 +48,8 @@ slider.addEventListener("pointermove", (e) => {
 	const walk = (x - startX) * 3; //scroll-fast
 	slider.scrollLeft = scrollLeft - walk;
 });
-// Function of text appearing and disappearing by clicking on a link
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('#services-nav .nav-link');
     const tabPanes = document.querySelectorAll('#services-content .tab-pane');
@@ -52,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();
 
-            const targetId = this.getAttribute('href').substring(1);
+            const targetId = this.getAttribute('data-target').substring(1);
 
             // Remove active classes from all links and panes
             navLinks.forEach(function(nav) {
@@ -75,7 +81,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+//
 //modal iframe google maps (jQuery)
+//
+//
+
 const openModalBtn = document.getElementById('open-modal');
 const modalOverlay = document.getElementById('modal-overlay');
 
@@ -109,10 +120,14 @@ $(document).ready(function() {
 });
 
 
+//
+// emailJS API
+//
+//
 function sendEmail(e) {
-    e.preventDefault(); // Предотвращаем стандартное поведение отправки формы
+    e.preventDefault(); 
   
-    // Собираем данные из формы
+    
     var templateParams = {
       from_name: document.querySelector('input[name="name"]').value,
       telephone: document.querySelector('input[name="telephone"]').value,
@@ -120,7 +135,7 @@ function sendEmail(e) {
       message: document.querySelector('textarea[name="message"]').value
     };
   
-    // Отправляем данные через EmailJS
+    
     emailjs.send('service_4iovkfb', 'template_2wzrzmg', templateParams)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
