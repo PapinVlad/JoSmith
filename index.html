@@ -20,6 +20,36 @@
    })();
 </script>
 
+<!-- <style>
+  @supports (animation-timeline: scroll()) {
+    /* As we're about to shift content out of .columns, we need it to hide its overflow */
+    .columns {
+      overflow-y: hidden;
+    }
+
+    .column-reverse {
+      /* Flip item order in reverse columns */
+      flex-direction: column-reverse;
+    }
+
+    /* Set up Animation */
+    @keyframes adjust-position {
+      from {
+        transform: translateY(calc(-50% + 50vh));
+      }
+
+      to {
+        transform: translateY(calc(50% - 50vh));
+      }
+    }
+
+    /* Hook our animation with the timeline to our columns */
+    .column-reverse {
+      animation: adjust-position linear forwards;
+      animation-timeline: scroll(root block);
+    }
+  }
+</style> -->
 </head>
 <body>
     <nav class="navbar">
@@ -34,8 +64,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#warning">Pleace note!</a></li>
+                <li><a href="#warning">Please note!</a></li>
                 
             </ul>
             <a href="#home">
@@ -43,7 +74,6 @@
             </a>
         </div>
     </nav>
-    <div class="wrapper">
         <section id="home" class="hero-section ">
             <div class="container">
                 <div class="row">
@@ -255,7 +285,7 @@
                           <div class="tab-pane" id="service-content-6"  aria-labelledby="service-link-6">
                               <div class="row">
                                   <div class="twelwe five">
-                                      <img src="./img/WeddingPhotography/wedding1.jpg" alt="Wedding photo">
+                                      <img src="./img/WeddingPhotography/wedding10.jpg" alt="Wedding photo">
                                   </div>
                                   <div class="twelwe seven">
                                       <h6>Weddings are one of the most significant milestones in our lives, filled with love, joy, and unforgettable moments. This special day deserves to be captured in all its beauty to preserve the memories that you will cherish forever.</h6>
@@ -267,6 +297,160 @@
                   </div>
               </div>
       
+          </div>
+      </section>
+      <section id="portfolio" class="bg-light-blue">
+          <div class="columns" style="overflow-y: hidden;" >
+            <div class="column column-reverse" style="flex-direction: column-reverse;">
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/LandscapeThumbnails/landscape-thumbnail1.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape Thumbnails</span> <span>2011</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/LandscapeThumbnails/landscape-thumbnail2.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape Thumbnails</span> <span>2012</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/LandscapeThumbnails/landscape-thumbnail3.jpg" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape Thumbnails</span> <span>2013</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/LandscapeThumbnails/landscape-thumbnail4.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape Thumbnails</span> <span>2014</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/LandscapeThumbnails/landscape-thumbnail5.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Love Boat</span> <span>2015</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape6.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape Thumbnails</span> <span>2016</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/LandscapeThumbnails/landscape-thumbnail7.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape Thumbnails</span> <span>2017</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape8.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape Thumbnails</span> <span>2018</span> </figcaption>
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/WeddingPhotography/WeddingThumnails/wedding-thumbnail1.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Wedding Thumnails</span> <span>2019</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/WeddingPhotography/WeddingThumnails/wedding-thumbnail2.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Wedding Thumnails</span> <span>2020</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/WeddingPhotography/WeddingThumnails/wedding-thumbnail3.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Wedding Thumnails</span> <span>2021</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/WeddingPhotography/WeddingThumnails/wedding-thumbnail4.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Wedding Thumnails</span> <span>2009</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/WeddingPhotography/WeddingThumnails/wedding-thumbnail5.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Wedding Thumnails</span> <span>2010</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/WeddingPhotography/wedding6.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Wedding Thumnails</span> <span>2011</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/WeddingPhotography/wedding7.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Wedding Thumnails</span> <span>2012</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/WeddingPhotography/WeddingThumnails/wedding-thumbnail8.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Wedding Thumnails</span> <span>2013</span> </figcaption>
+              </figure>
+            </div>
+            <div class="column column-reverse" style="flex-direction: column-reverse;">
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/lanscape1.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape</span> <span>2014</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape2.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape</span> <span>2015</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape3.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape</span> <span>2016</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape4.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape</span> <span>2017</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape5.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape</span> <span>2018</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape6.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape</span> <span>2019</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape7.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape</span> <span>2020</span> </figcaption>
+              </figure>
+              <figure class="column__item">
+                <div class="column__item-imgwrap">
+                  <img src="./img/LandscapePhotography/landscape8.jpg" alt="" title="" height="" width="">
+                </div>
+                <figcaption class="column__item-caption"> <span>Landscape</span> <span>2021</span> </figcaption>
+              </figure>
+            </div>
           </div>
       </section>
       <section id="contact" class="bg-light-blue">
@@ -335,6 +519,7 @@
         </div>
 
       </section>
+      
       <section id="warning" class="warning" style="background-image: url(./img/background-cta.webp);">
         <div class="container"> 
             <div class="row text-center">
@@ -347,7 +532,6 @@
         </div>
     </section>
       
-    </div>
 
     <footer  class="footerContainer">
       <div class="socialMedia">
@@ -394,6 +578,9 @@
              
               
               <p class="footerLinks_links_links_text">
+                <a href="#portfolio" class="footerLinks_links_links_text_link">Portfolio</a>
+              </p>
+              <p class="footerLinks_links_links_text">
                 <a href="#contact" class="footerLinks_links_links_text_link">Contact</a>
               </p>
               <p class="footerLinks_links_links_text">
@@ -422,7 +609,35 @@
     </footer>
 
 
+    <script>
+      // As we're about to shift content out of .columns, we need it to hide its overflow
+document.querySelector(".columns").style.overflowY = "hidden";
 
+// Set up timeline
+const timeline = new ScrollTimeline({
+source: document.documentElement,
+});
+
+// Loop all eligible columns
+document.querySelectorAll(".column-reverse").forEach(($column) => {
+// Flip item order in reverse columns
+$column.style.flexDirection = "column-reverse";
+
+// Hook Animation
+$column.animate(
+  {
+    transform: [
+      "translateY(calc(-70% + 70vh))",
+      "translateY(calc(70% - 70vh))"
+    ]
+  },
+  {
+    fill: "both",
+    timeline
+  }
+);
+});
+    </script>
       <script src="./js/allJs.js"></script>
 </body>
 </html>
