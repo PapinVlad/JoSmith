@@ -417,3 +417,30 @@ fieldset{
     padding-top: 100px;
     display: block;
   }
+
+/*  */
+/*  */
+/* portfolio */
+/*  */
+/*  */
+/* Three column layout */
+/* Three column layout */
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .column {
+    display: flex;
+    flex-direction: column;
+    }
+    /* Shift entire column up, but not so much that it goes out of view */
+    
+    .column__item-imgwrap img {
+        border-radius: 1em;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 0.75;
+        object-fit: cover;
+    }
+
